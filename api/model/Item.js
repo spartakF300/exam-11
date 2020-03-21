@@ -21,6 +21,7 @@ const ItemSchema = new Schema({
     image: String,
     price: {
         type: Number,
+        min: 0,
         required: true
     },
     datetime: {
